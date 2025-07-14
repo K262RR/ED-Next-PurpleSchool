@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Htag, Button, Ptag } from "@/components";
+import { Htag, Button, Ptag, Tag } from "@/components";
 
 export const metadata: Metadata = {
   title: "Мой учебный проект",
@@ -20,6 +20,21 @@ export default function Home() {
       <Ptag size="m">Текст для среднего размера шрифта</Ptag>
       <Ptag>Текс у которого не задан размер шрифта</Ptag>
       <Ptag size="l">Текст для большого размера шрифта</Ptag>
+      <Tag size="s" color="ghost">
+        Ghost
+      </Tag>
+      <Tag size="s" color="red">
+        Red
+      </Tag>
+      <Tag size="m" color="green">
+        Green
+      </Tag>
+      <Tag size="m" color="primary">
+        Primary
+      </Tag>
+      <Tag size="m" color="grey">
+        Grey
+      </Tag>
     </>
   );
 }
